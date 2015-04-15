@@ -18,22 +18,24 @@ Files :
  - updater.py : updater is a script built on top of diff.py which also check-out sources file from SourceSafe before-hand.
  - vss.py : a SourceSafe automation bot copied from somewhere on Internet, and catered to this project's needs.
 
-Usage:
-	diff.py [-arf] [-n <gen_name>|--name <gen_name>] [-o <gen_path>|--output <gen_path>] (INPUT_FOLDER)
-	updater.py [-arf] [-n <gen_name>|--name <gen_name>] [-o <gen_path>|--output <gen_path>] (INPUT_FOLDER)
-	diff.py -h | --help
+```
+	Usage:
+		diff.py [-arf] [-n <gen_name>|--name <gen_name>] [-o <gen_path>|--output <gen_path>] (INPUT_FOLDER)
+		updater.py [-arf] [-n <gen_name>|--name <gen_name>] [-o <gen_path>|--output <gen_path>] (INPUT_FOLDER)
+		diff.py -h | --help
 
-Options:
-	-h --help
-	-n <gen_name> --name=<gen_name>
-		choose the generated files' name, without extensions.
-		By default it's the input folder base name.
-	-o <gen_path> --output=<gen_path> 
-		select where to output the generated files
-	-a --apply
-		apply modification to every remplacement found 
-	-r
-		look recursively (not implemented yet)
-	-file
-		work on a single file (instead of folder)
+	Options:
+		-h --help
+		-n <gen_name> --name=<gen_name>
+			choose the generated files' name, without extensions.
+			By default it's the input folder base name.
+		-o <gen_path> --output=<gen_path> 
+			select where to output the generated files
+		-a --apply
+			apply modification to every remplacement found 
+		-r
+			look recursively (not implemented yet)
+		-file
+			work on a single file (instead of folder)
+```
 
