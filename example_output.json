@@ -1,0 +1,24 @@
+{
+   "XXXX.cpp": {
+        "69": {
+            "ante": "\t\t\t\t\tDummy.Format(\"%s_%s_%s\", CurrentDatabase -> GetDatabasePrefix(), Prefix, ShortName);\n",
+            "post": "\t\t\t\t\tDummy.Format(_TEXT(\"%s_%s_%s\"), CurrentDatabase -> GetDatabasePrefix(), Prefix, ShortName);\n"
+        }
+    },
+    "aaaa.h": {},
+    "bbbb.h": {},
+    "YYYY.cpp": {
+        "91": {
+            "ante": "\treturn strcmp(SortInfo -> ListCtrl -> GetItemText(lParam1, SortInfo -> ColumnNumber), SortInfo -> ListCtrl -> GetItemText(lParam2, SortInfo -> ColumnNumber));\n",
+            "post": "\treturn _tcscmp(SortInfo -> ListCtrl -> GetItemText(lParam1, SortInfo -> ColumnNumber), SortInfo -> ListCtrl -> GetItemText(lParam2, SortInfo -> ColumnNumber));\n"
+        }
+    },
+
+    "cccc.h": {},
+    "ZZZZ.cpp": {
+        "100": {
+            "ante": "\tint Height = AfxGetApp() -> GetProfileInt(RegistryKeyName, \"Parameter View Height\", -1);\n",
+            "post": "\tint Height = AfxGetApp() -> GetProfileInt(RegistryKeyName, _TEXT(\"Parameter View Height\"), -1);\n"
+        }
+    }
+}

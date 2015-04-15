@@ -1,0 +1,14 @@
+XXXX.cpp
+69 :
+---					Dummy.Format("%s_%s_%s", CurrentDatabase -> GetDatabasePrefix(), Prefix, ShortName);
++++					Dummy.Format(_TEXT("%s_%s_%s"), CurrentDatabase -> GetDatabasePrefix(), Prefix, ShortName);
+
+YYYY.cpp
+91 :
+---	return strcmp(SortInfo -> ListCtrl -> GetItemText(lParam1, SortInfo -> ColumnNumber), SortInfo -> ListCtrl -> GetItemText(lParam2, SortInfo -> ColumnNumber));
++++	return _tcscmp(SortInfo -> ListCtrl -> GetItemText(lParam1, SortInfo -> ColumnNumber), SortInfo -> ListCtrl -> GetItemText(lParam2, SortInfo -> ColumnNumber));
+
+ZZZZ.cpp
+100 :
+---	int Height = AfxGetApp() -> GetProfileInt(RegistryKeyName, "Parameter View Height", -1);
++++	int Height = AfxGetApp() -> GetProfileInt(RegistryKeyName, _TEXT("Parameter View Height"), -1);
